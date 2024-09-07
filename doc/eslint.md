@@ -8,19 +8,15 @@
 
 在配置中添加如下代码,即可生效屏幕报错
 ```vite.config.js
-
-import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
+import { defineConfig } from 'vite'
 import eslintPlugin from 'vite-plugin-eslint'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue(),eslintPlugin()],
+  plugins: [vue(), eslintPlugin()],
 })
-
-
 ```
-
 
 ## setting.js
 ```
@@ -53,7 +49,6 @@ export default [
 ];
 
 ```
-
 
 常见问题
 1、配置冲突时如何处理？
