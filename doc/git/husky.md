@@ -9,3 +9,5 @@ npx husky init
 - pre-commit是一个脚本文件
 
 直接修改其中的内容即可，例如 `npm run lint:fix`
+
+https://typicode.github.io/husky/
