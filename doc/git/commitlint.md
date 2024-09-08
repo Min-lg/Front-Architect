@@ -10,6 +10,12 @@ echo "export default {extends: ['@commitlint/config-conventional']};" > commitli
 
 此时根目录下就有了：commitlint.config.js，并且继承了默认配置，我们也可以根据需求修改配置，例如其他博主的优秀案例
 
+## 注意，commitlint 也可以借助husky进行调用
+
+使用如下命令，向commit-msg钩子添加代码
+
+`npx husky add .husky/commit-msg 'npx --no-install commitlint --edit "$1"'`
+
 ```
 module.exports = {
     ignores: [commit => commit.includes('init')],
