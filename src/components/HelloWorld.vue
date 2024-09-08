@@ -18,7 +18,7 @@ console.log('%c [ countb ]-8', 'font-size:13px; background:pink; color:#bf2c9f;'
 
   <div class="card">
     <button type="button" @click="count++">
-      count is {{ count }} 12
+      count is {{ count }} 12 dasd
     </button>
 
     <p>
