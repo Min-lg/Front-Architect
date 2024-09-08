@@ -8,16 +8,21 @@
     "build": "vue-tsc -b && vite build",
     "preview": "vite preview",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "prepare": "husky"
   },
   "dependencies": {
     "vue": "^3.4.37"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^3.3.2",
+    "@commitlint/cli": "^19.4.1",
+    "@commitlint/config-conventional": "^19.4.1",
     "@vitejs/plugin-vue": "^5.1.2",
     "eslint": "^9.10.0",
+    "eslint-plugin-format": "^0.1.2",
     "globals": "^15.9.0",
+    "lint-staged": "^15.2.10",
     "typescript": "^5.5.3",
     "vite": "^5.4.1",
     "vite-plugin-eslint": "^1.8.1",

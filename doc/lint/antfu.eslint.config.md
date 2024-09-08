@@ -5,9 +5,11 @@
 ## 使用流程
 
 ### CLI 自动配置
-* pnpm dlx @antfu/eslint-config@latest
+
+- pnpm dlx @antfu/eslint-config@latest
 
 ### 手动配置
+
 `pnpm i -D eslint @antfu/eslint-config`
 
 ```
@@ -28,6 +30,7 @@ Add script for package.json
 ```
 
 ## IDE 保存格式化的配置 IDE Support (auto fix on save)
+
 ```
 // Add the following settings to your .vscode/settings.json:
 {
@@ -82,6 +85,7 @@ Add script for package.json
 }
 
 ```
+
 ## 此时就已经配置完了，继续搭配 vite-plugin-eslint 在项目内集成保存，以达到更明显的提示
 
 `注意：配置完需要重启项目生效`
@@ -89,6 +93,7 @@ Add script for package.json
 `npm install vite-plugin-eslint --save-dev`
 
 在配置中添加如下代码,即可生效屏幕报错
+
 ```vite.config.js
 import vue from '@vitejs/plugin-vue'
 import { defineConfig } from 'vite'
